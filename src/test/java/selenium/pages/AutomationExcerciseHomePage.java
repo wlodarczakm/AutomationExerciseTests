@@ -22,19 +22,6 @@ public class AutomationExcerciseHomePage extends TestSettings {
     @FindBy(xpath = ".//a[@style='color: orange;']")
     WebElement homeButton;
     
-//    List<WebElement> elements = driver.findElement(By.xpath(".//a[@style='color: orange;']"))
-//            .findElements(By.xpath(".//a[text()=' Home']"));
-//    WebElement przyciskHome = driver.findElement(By.xpath(".//a[@style='color: orange;']"));
-//    .//li//a[contains(.,' Home')]//text()
-//    WebElement przyciskHome = driver.findElement(By.xpath(".//li//a//i[@class='fa fa-home']"));
-
-//    tutaj myk polega na tym że w klasie HomeButtonClick() mogę się odnieść WebElementu utworzonego przy użyciu FindBY
-//    ale jak utworze sobie WebElement klasyczną metodą:
-//    WebElement przyciskHome = driver.findElement(By.xpath(".//li//a//i[@class='fa fa-home']"));
-//    to wywala mi błąd
-//    org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element:
-//    {"method":"css selector","selector":"*[name='przyciskHome']"}
-
 
     public void HomeButtonClick() {
 //        elements.get(0).click();
