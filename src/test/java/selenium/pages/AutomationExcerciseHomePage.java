@@ -14,13 +14,14 @@ import java.util.Objects;
 public class AutomationExcerciseHomePage extends TestSettings {
     Actions actions = new Actions(driver);
 
+
     public AutomationExcerciseHomePage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = ".//a[@style='color: orange;']")
     WebElement homeButton;
-
+    
 //    List<WebElement> elements = driver.findElement(By.xpath(".//a[@style='color: orange;']"))
 //            .findElements(By.xpath(".//a[text()=' Home']"));
 //    WebElement przyciskHome = driver.findElement(By.xpath(".//a[@style='color: orange;']"));
@@ -33,6 +34,8 @@ public class AutomationExcerciseHomePage extends TestSettings {
 //    to wywala mi błąd
 //    org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element:
 //    {"method":"css selector","selector":"*[name='przyciskHome']"}
+
+
     public void HomeButtonClick() {
 //        elements.get(0).click();
         WebElement przyciskHome = driver.findElement(By.xpath(".//li//a//i[@class='fa fa-home']"));

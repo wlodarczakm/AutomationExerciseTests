@@ -19,7 +19,7 @@ public class RegisterUser extends TestSettings {
     }
 
     @Test
-    public void Testsss() throws Exception {
+    public void home_page_is_visible_successfully() throws Exception {
         AutomationExcerciseHomePage objAutomationExcerciseHomePage;
         objAutomationExcerciseHomePage = new AutomationExcerciseHomePage(TestSettings.driver);
         objAutomationExcerciseHomePage.HomeButtonClick();
